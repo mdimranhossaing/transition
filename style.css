@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+}
+
+.button {
+	width: 300px;
+	height: auto;
+	margin: 100px auto;
+	text-align: center;
+}
+a {
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	font-family: tahoma;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #333;
+	border: 2px groove #333;
+	padding: 8px 12px;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	letter-spacing: 2px;
+	box-sizing: border-box;
+}
+a:hover {
+	color: #fff;
+	border: 2px groove #fff;
+}
+a:after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	content: "";
+	width: 0;
+	height: 100%;
+	background: tomato;
+	-webkit-transition: width 0.3s linear;
+	transition: width 0.3s linear;
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+}
+a:hover:after {
+	left: 0;
+	right: auto;
+	width: 100%;
+}
